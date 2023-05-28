@@ -22,6 +22,6 @@ for i in range(i):
         sum_1 += 1
 print(coins)
 if sum_0 < sum_1:
-    print("Минимальное число монет", sum_0)
+    print("Минимальное число монет '0'", sum_0)
 else:
-    print("Минимальное число монет", sum_1)
+    print("Минимальное число монет '1'", sum_1)
