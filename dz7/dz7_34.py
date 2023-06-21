@@ -12,11 +12,13 @@
 """
 
 
-c = input("Введите стих: ")
-st = c.lower().split()
-f = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')
-t = f(st[0])
-if all([f(i) == t for i in st]):
+dict = 'аоуэыяеёюи'
+c = input("Введите стих: ").split()
+res = [sum([True for j in word.lower() if j in dict]) for word in c]
+
+#print (res)
+
+if all(res) and len(set(res)) == 1:
     print('Парам пам-пам')
 else:
     print('Пам парам')
